@@ -8,6 +8,18 @@ button:disabled{background:#555;cursor:wait}
 h1{line-height:1.1}
 h1 mark{display:inline-block;background:#191919;color:white;padding:0 .12em .055em;margin-top:.045em;line-height:.96}
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 footer svg{flex:none}
 @media(max-width:800px){}
